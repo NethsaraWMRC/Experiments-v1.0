@@ -9,6 +9,7 @@ public class MultiThreadExecutor {
         long END = 100_000_000L;
 
         int NUM_TASKS = Runtime.getRuntime().availableProcessors();
+        // int NUM_TASKS = 4; 
         System.out.println("Number of available processors: " + NUM_TASKS);
 
         long chunkSize = (END - START) / NUM_TASKS;
